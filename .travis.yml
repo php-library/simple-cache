@@ -1,0 +1,6 @@
+language: php
+php:
+  - '7.0'
+  - hhvm
+  - nightly
+script: phpunit --configuration $DB.phpunit.xml
