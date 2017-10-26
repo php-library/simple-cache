@@ -1,6 +1,6 @@
 {
-  "name": "dependency-injection",
-  "description": "Dependency Injection Example",
+  "name": "php-simple-cache",
+  "description": "PHP Simple Cache Library",
   "keywords": ["Cache", "SimpleCache", "Performance"],
   "authors": [
     {
