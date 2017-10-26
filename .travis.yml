@@ -6,7 +6,7 @@ services:
 
 before_install:
 - docker pull epcallan/php7-testing-phpunit:7.1-phpunit6
-- docker run epcallan/php7-testing-phpunit /bin/sh -c "cd /root/php7-testing-phpunit; bundle exec rake test"
+- docker run epcallan/php7-testing-phpunit:7.1-phpunit6 /bin/sh -c "cd /root/php7-testing-phpunit:7.1-phpunit6; bundle exec rake test"
 
 script:
   - composer install
