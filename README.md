@@ -1,1 +1,1 @@
-Test content
+PHP library to deal with fast and simple cache solutions with multiple adapter options.
