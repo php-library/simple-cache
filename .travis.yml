@@ -1,7 +1,7 @@
 language: php
 php:
   - '7.0'
-  - hhvm-3.12
+  - hhvm -d hhvm.php7.all=1
   - nightly
 script:
   - composer install
