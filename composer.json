@@ -1,5 +1,5 @@
 {
-  "name": "php-simple-cache",
+  "name": "ismatkurt/php-simple-cache",
   "description": "PHP Simple Cache Library",
   "keywords": ["Cache", "SimpleCache", "Performance"],
   "authors": [
