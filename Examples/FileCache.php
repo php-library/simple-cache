@@ -9,6 +9,10 @@ require_once PROJECT_PATH . '/vendor/autoload.php';
 
 $storagePath = PROJECT_PATH . '/_storage/';
 
+if (!file_exists($storagePath)) {
+    mkdir($storagePath);
+}
+
 $fileBasedStorage = new Storage(new FileAdapter($storagePath));
 
 $fileBasedStorage->save('testKey', 'test value');
