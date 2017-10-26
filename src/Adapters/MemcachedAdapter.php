@@ -1,13 +1,14 @@
 <?php
 
-namespace App\Storage;
+namespace SimpleCache\Adapters;
 
 use Memcached;
+use SimpleCache\Contracts\AdapterInterface;
 
 /**
  * Class MemcachedAdapter
  *
- * @package App\Storage
+ * @package SimpleCache\Adapters
  */
 class MemcachedAdapter implements AdapterInterface
 {

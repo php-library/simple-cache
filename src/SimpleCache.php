@@ -1,15 +1,15 @@
 <?php
 
-namespace App;
+namespace SimpleCache;
 
-use App\Storage\AdapterInterface;
+use SimpleCache\Contracts\AdapterInterface;
 
 /**
- * Class Storage
+ * Class SimpleCache
  *
- * @package App
+ * @package SimpleCache
  */
-class Storage
+class SimpleCache
 {
     /**
      * @var AdapterInterface
@@ -19,20 +19,20 @@ class Storage
     /**
      * @var null|string
      */
-    private $extension = '.txt';
+    private $fileExtension = '.txt';
 
     /**
-     * Storage constructor.
+     * SimpleCache constructor.
      *
      * @param AdapterInterface $adapter
-     * @param string|null $extension
+     * @param string|null $fileExtension
      */
-    public function __construct(AdapterInterface $adapter, string $extension = null)
+    public function __construct(AdapterInterface $adapter, string $fileExtension = null)
     {
         $this->adapter = $adapter;
 
-        if ($extension) {
-            $this->extension = $extension;
+        if ($fileExtension) {
+            $this->fileExtension = $fileExtension;
         }
     }
 

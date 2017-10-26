@@ -1,7 +1,7 @@
 <?php
 
-use App\Storage;
-use App\Storage\RedisAdapter;
+use SimpleCache\SimpleCache;
+use SimpleCache\Adapters\RedisAdapter;
 
 define('PROJECT_PATH', dirname( __DIR__));
 
@@ -16,7 +16,7 @@ $redisDatabaseId = 1;
 
 $redisAdapter = new RedisAdapter($redisHost, $redisPort, $redisDatabaseId, $redisTimeout);
 
-$redisBasedStorage = new Storage($redisAdapter);
+$redisBasedStorage = new SimpleCache($redisAdapter);
 
 $redisBasedStorage->save('somekey', 'somevalue');
 $result = $redisBasedStorage->retrieve('somekey');

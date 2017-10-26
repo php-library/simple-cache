@@ -1,5 +1,12 @@
 {
   "name": "dependency-injection",
+  "authors": [
+    {
+      "name": "Ismail Atkurt",
+      "homepage": "https://github.com/ismatkurt",
+      "role": "Developer"
+    }
+  ],
   "description": "Dependency Injection Example",
   "minimum-stability": "stable",
   "config": {

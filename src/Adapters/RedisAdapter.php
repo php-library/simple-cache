@@ -1,11 +1,13 @@
 <?php
 
-namespace App\Storage;
+namespace SimpleCache\Adapters;
+
+use SimpleCache\Contracts\AdapterInterface;
 
 /**
  * Class RedisAdapter
  *
- * @package App\Storage
+ * @package SimpleCache\Adapters
  */
 class RedisAdapter implements AdapterInterface
 {
@@ -21,7 +23,6 @@ class RedisAdapter implements AdapterInterface
      * @param int $port
      * @param $databaseId
      * @param int $timeout
-     * @internal param \Redis $redis
      */
     public function __construct($host, $port = 6379, $databaseId, $timeout = 2)
     {

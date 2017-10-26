@@ -1,7 +1,8 @@
 <?php
 
-use App\Storage;
-use App\Storage\FileAdapter;
+
+use SimpleCache\SimpleCache;
+use SimpleCache\Adapters\FileAdapter;
 
 define('PROJECT_PATH', dirname( __DIR__));
 
@@ -13,7 +14,7 @@ if (!file_exists($storagePath)) {
     mkdir($storagePath);
 }
 
-$fileBasedStorage = new Storage(new FileAdapter($storagePath));
+$fileBasedStorage = new SimpleCache(new FileAdapter($storagePath));
 
 $fileBasedStorage->save('testKey', 'test value');
 printf('testKey saved in file based DB' . PHP_EOL);

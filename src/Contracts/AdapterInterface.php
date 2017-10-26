@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Storage;
+namespace SimpleCache\Contracts;
 
 /**
  * Interface AdapterInterface
  *
- * @package App
+ * @package SimpleCache
  */
 interface AdapterInterface
 {

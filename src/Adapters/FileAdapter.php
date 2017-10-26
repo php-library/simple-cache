@@ -1,11 +1,13 @@
 <?php
 
-namespace App\Storage;
+namespace SimpleCache\Adapters;
+
+use SimpleCache\Contracts\AdapterInterface;
 
 /**
  * Class FileAdapter
  *
- * @package App\Storage
+ * @package SimpleCache\Adapters
  */
 class FileAdapter implements AdapterInterface
 {
