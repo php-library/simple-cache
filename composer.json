@@ -1,0 +1,13 @@
+{
+  "name": "dependency-injection",
+  "description": "Dependency Injection Example",
+  "minimum-stability": "stable",
+  "config": {
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "./"
+    }
+  },
+  "license": "proprietary"
+}
