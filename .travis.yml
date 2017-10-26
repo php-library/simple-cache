@@ -3,4 +3,6 @@ php:
   - '7.0'
   - hhvm
   - nightly
-script: phpunit --configuration tests/unittests/phpunit.xml
+script:
+  - composer install
+  - phpunit --configuration tests/unittests/phpunit.xml
