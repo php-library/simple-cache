@@ -1,5 +1,7 @@
 {
   "name": "dependency-injection",
+  "description": "Dependency Injection Example",
+  "keywords": ["Cache", "SimpleCache", "Performance"],
   "authors": [
     {
       "name": "Ismail Atkurt",
@@ -7,8 +9,11 @@
       "role": "Developer"
     }
   ],
-  "description": "Dependency Injection Example",
+  "type": "library",
   "minimum-stability": "stable",
+  "require": {
+    "php": ">=7.0"
+  },
   "config": {
   },
   "autoload": {
@@ -16,5 +21,5 @@
       "SimpleCache\\": "./src"
     }
   },
-  "license": "proprietary"
+  "license": "MIT"
 }
