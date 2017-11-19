@@ -1,12 +1,19 @@
 language: php
-sudo: required
+
+php:
+  - 7.0
+  - 7.0snapshot
+  - 7.1
+  - 7.1snapshot
+  - master
 
 services:
   - docker
 
 before_install:
-- docker pull epcallan/php7-testing-phpunit:7.1-phpunit6
-- docker run epcallan/php7-testing-phpunit:7.1-phpunit6 /bin/sh -c "cd /root/php7-testing-phpunit:7.1-phpunit6; bundle exec rake test"
+  - composer self-update
+  - composer clear-cache
+  - composer update --no-interaction --no-ansi --no-progress --no-suggest --optimize-autoloader --prefer-stable
 
 script:
   - composer install
