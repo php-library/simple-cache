@@ -48,6 +48,6 @@ class FileAdapterTest extends TestCase
 
         $result = $classUnderTest->get($testKey);
 
-        $this->assertEquals(12, $result);
+        $this->assertEquals($testValue, $result);
     }
 }
