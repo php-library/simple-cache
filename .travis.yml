@@ -3,8 +3,6 @@ language: php
 php:
   - 7.0
   - 7.0snapshot
-  - 7.1
-  - 7.1snapshot
   - master
 
 services:
@@ -17,4 +15,4 @@ before_install:
 
 script:
   - composer install
-  - phpunit --configuration tests/unittests/phpunit.xml
+  - phpunit --configuration tests/unittests/phpunit.xml tests/unittests
