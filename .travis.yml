@@ -13,7 +13,7 @@ services:
 before_install:
   - composer self-update
   - composer clear-cache
-  - composer update --no-interaction --no-ansi --no-progress --no-suggest --optimize-autoloader --prefer-stable
+  - composer update --no-interaction --no-ansi --no-suggest --optimize-autoloader --prefer-stable
 
 script:
   - composer install
