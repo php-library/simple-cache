@@ -1,4 +1,4 @@
-<p align="right">
+<p align="left">
     <a href="#" alt="Backers on Open Collective">
         <img src="https://travis-ci.org/ismatkurt/php-simple-cache.svg?branch=0.0.6" /></a>
 </p>
