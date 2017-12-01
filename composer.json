@@ -1,6 +1,7 @@
 {
   "name": "ismatkurt/php-simple-cache",
   "description": "PHP Simple Cache Library",
+  "homepage": "https://ismatkurt.github.io/php-simple-cache/",
   "keywords": ["Cache", "SimpleCache", "Performance"],
   "authors": [
     {
