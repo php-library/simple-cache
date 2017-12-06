@@ -3,9 +3,9 @@
   "description": "PHP Simple Cache Library",
   "homepage": "https://ismatkurt.github.io/php-simple-cache/",
   "keywords": [
-    "Php Cache",
-    "Simple Cache",
-    "Redis Cache",
+    "Php-Cache",
+    "Simple-Cache",
+    "Redis-Cache",
     "Memcached",
     "Cache",
     "SimpleCache",
