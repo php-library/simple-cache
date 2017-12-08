@@ -7,7 +7,7 @@ PHP library to deal with fast and simple cache solutions with multiple adapter o
 
 # Installation
 ```
-composer require ismatkurt/php-simple-cache
+composer require php-library/simple-cache
 ```
 
 # Examples
