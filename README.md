@@ -1,6 +1,6 @@
 <p align="left">
     <a href="#" alt="Backers on Open Collective">
-        <img src="https://travis-ci.org/ismatkurt/php-simple-cache.svg?branch=0.0.6" /></a>
+        <img src="https://travis-ci.org/php-library/simple-cache.svg?branch=master" /></a>
 </p>
 
 PHP library to deal with fast and simple cache solutions with multiple adapter options.
